@@ -3,6 +3,7 @@ import { MarqueeSection } from './sections/MarqueeSection';
 import { AboutSection } from './sections/AboutSection';
 import { SoftwareExpertiseSection } from './sections/SoftwareExpertiseSection';
 import { WorkSection } from './sections/WorkSection';
+import { FAQSection } from './sections/FAQSection';
 import { ContactSection } from './sections/ContactSection';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <AboutSection />
       <SoftwareExpertiseSection />
       <WorkSection />
+      <FAQSection />
       <ContactSection />
     </main>
   );

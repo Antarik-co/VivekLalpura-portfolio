@@ -1,34 +1,78 @@
-# React + TypeScript + Vite
+# Vivek Lalpura Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-1F2937?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Vite](https://img.shields.io/badge/Vite-8-111827?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Vercel Ready](https://img.shields.io/badge/Vercel-ready-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-Currently, two official plugins are available:
+A cinematic portfolio for **Vivek Lalpura**, a civil engineer and construction estimation manager specializing in roofing, cladding, earthworks, civil project estimating, and digital quantity takeoff for Australian construction clients.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live URL planned:** [viveklalpura.vercel.app](https://viveklalpura.vercel.app/)
 
-## React Compiler
+## What This Site Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Area | Detail |
+| --- | --- |
+| Professional focus | Civil engineering, construction estimation, roofing, cladding, earthworks |
+| Experience signal | 5+ years in construction estimation |
+| Project scale | 6,000+ roofing plans and 700+ excavation plans |
+| Audience | Australian construction teams, builders, estimators, and sponsorship reviewers |
+| Conversion paths | Email, phone, LinkedIn, and downloadable resume |
 
-## Expanding the Oxlint configuration
+## Built For Search, AI, And Recruiters
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+This portfolio includes a production-ready discovery layer:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- SEO metadata with focused title, description, canonical URL, Open Graph, and Twitter cards.
+- GEO and answer-engine friendly structured data using Schema.org `Person`, `WebSite`, `ProfessionalService`, and `FAQPage`.
+- Visible FAQ content that mirrors the structured answers.
+- `robots.txt`, `sitemap.xml`, `site.webmanifest`, and `llms.txt`.
+- Accessible labels and descriptive image alt text for crawler and assistive technology clarity.
+
+## Experience
+
+The site is built as a sharp, visual single-page portfolio:
+
+- Full-screen hero with motion video background.
+- Strong brand header with section navigation and resume access.
+- Animated project imagery and software expertise sections.
+- Modal galleries for portfolio work samples.
+- Contact section with direct action links.
+
+## Tech Stack
+
+| Layer | Tools |
+| --- | --- |
+| Framework | React 19 + TypeScript |
+| Build | Vite |
+| Styling | Tailwind CSS |
+| Motion | Framer Motion |
+| Icons | Lucide React |
+| Quality | Oxlint, TypeScript build checks |
+
+## Local Development
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
-"# VivekLalpura-portfolio" 
-"# VivekLalpura-portfolio" 
+## Production Build
+
+```bash
+npm run build
+```
+
+The build output is generated in `dist/` and is ready for Vercel deployment.
+
+## Contact
+
+| Channel | Link |
+| --- | --- |
+| Email | [lalpuravivek@gmail.com](mailto:lalpuravivek@gmail.com) |
+| Phone | [+91 7405115231](tel:+917405115231) |
+| LinkedIn | [linkedin.com/in/viveklalpura](https://linkedin.com/in/viveklalpura) |
+
+---
+
+Designed to make Vivek's construction estimating work easy to understand, easy to verify, and easy to act on.

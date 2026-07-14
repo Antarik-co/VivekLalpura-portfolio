@@ -64,7 +64,7 @@ export function MarqueeSection() {
           <img
             key={`row1-${i}`}
             src={src}
-            alt="Work teaser"
+            alt="Construction estimation portfolio preview"
             loading="lazy"
             className="w-[420px] h-[270px] rounded-2xl object-cover flex-shrink-0"
           />
@@ -80,7 +80,7 @@ export function MarqueeSection() {
           <img
             key={`row2-${i}`}
             src={src}
-            alt="Work teaser"
+            alt="Construction drawing and estimating work preview"
             loading="lazy"
             className="w-[420px] h-[270px] rounded-2xl object-cover flex-shrink-0"
           />

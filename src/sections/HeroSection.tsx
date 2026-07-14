@@ -35,7 +35,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col overflow-x-clip relative">
+    <section id="home" className="h-screen flex flex-col overflow-x-clip relative">
       {/* Background Video Layer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <video 
@@ -63,14 +63,25 @@ export function HeroSection() {
         }} 
       />
 
-      {/* Navbar */}
-      <FadeIn delay={0} y={-20} as="nav" className="flex items-center px-6 md:px-10 pt-6 md:pt-8 w-full z-20">
-        <div className="flex justify-between w-full text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem]">
-          <a href="#about" className="hover:opacity-70 transition-opacity duration-200">About</a>
-          <a href="#software" className="hover:opacity-70 transition-opacity duration-200">Software</a>
-          <a href="#work" className="hover:opacity-70 transition-opacity duration-200">Work</a>
-          <a href="#contact" className="hover:opacity-70 transition-opacity duration-200">Contact</a>
-        </div>
+      {/* Header */}
+      <FadeIn delay={0} y={-20} as="header" className="w-full z-20 px-5 sm:px-8 md:px-10 pt-5 sm:pt-7">
+        <nav aria-label="Primary navigation" className="flex items-center justify-between gap-4 text-[#D7E2EA]">
+          <a href="#home" aria-label="Vivek Lalpura home" className="flex min-w-0 items-center gap-3 hover:opacity-75 transition-opacity duration-200">
+            <img src="/Monogram.svg" alt="" className="h-9 w-9 shrink-0" />
+            <span className="hidden sm:block text-sm md:text-base font-semibold uppercase tracking-[0.18em]">
+              Vivek Lalpura
+            </span>
+          </a>
+
+          <div className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-[0.72rem] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.18em]">
+            <a href="#about" className="hover:opacity-70 transition-opacity duration-200">About</a>
+            <a href="#software" className="hover:opacity-70 transition-opacity duration-200">Software</a>
+            <a href="#work" className="hover:opacity-70 transition-opacity duration-200">Work</a>
+            <a href="#answers" className="hover:opacity-70 transition-opacity duration-200">FAQ</a>
+            <a href="#contact" className="hover:opacity-70 transition-opacity duration-200">Contact</a>
+            <a href="/Resume.pdf" className="hidden sm:inline hover:opacity-70 transition-opacity duration-200">Resume</a>
+          </div>
+        </nav>
       </FadeIn>
 
       {/* Floating Chips */}
@@ -81,8 +92,8 @@ export function HeroSection() {
       {/* Hero Heading */}
       <div className="flex-grow flex items-center justify-center overflow-hidden z-20">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-[0.85] text-center w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
-            Hi, i&apos;m<br/>Vivek
+          <h1 className="hero-heading font-black uppercase tracking-normal leading-[0.85] text-center w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
+            Hi, I&apos;m<br/>Vivek
           </h1>
         </FadeIn>
       </div>

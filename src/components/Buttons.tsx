@@ -36,32 +36,6 @@ export function ViewWorkButton({ onClick }: { onClick?: () => void }) {
   );
 }
 
-interface DocumentTileProps {
-  icon: LucideIcon;
-  text: string;
-  href: string;
-  target?: string;
-  download?: boolean | string;
-}
-
-export function DocumentTile({ icon: Icon, text, href, target, download }: DocumentTileProps) {
-  return (
-    <a
-      href={href}
-      target={target}
-      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
-      download={download}
-      className="group relative overflow-hidden flex items-center gap-2 rounded-full border-2 border-[#D7E2EA] font-medium uppercase tracking-widest px-6 py-2.5 sm:px-8 sm:py-3 text-xs sm:text-sm transition-colors"
-    >
-      <div className="absolute inset-0 bg-[#D7E2EA] origin-bottom scale-y-0 transition-transform duration-[350ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-y-100 z-0" />
-      <div className="relative z-10 flex items-center gap-2 text-[#D7E2EA] group-hover:text-[#0C0C0C] transition-colors duration-[350ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]">
-        <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
-        <span>{text}</span>
-      </div>
-    </a>
-  );
-}
-
 interface ContactTileProps {
   icon: LucideIcon;
   text: string;

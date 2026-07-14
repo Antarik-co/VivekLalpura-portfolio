@@ -1,9 +1,38 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import type { MotionValue } from 'framer-motion';
 
 interface AnimatedTextProps {
   text: string;
   className?: string;
+}
+
+interface AnimatedCharacterProps {
+  char: string;
+  progressEnd: number;
+  progressStart: number;
+  scrollYProgress: MotionValue<number>;
+  spanKey: string;
+}
+
+function AnimatedCharacter({ char, progressEnd, progressStart, scrollYProgress, spanKey }: AnimatedCharacterProps) {
+  const opacity = useTransform(
+    scrollYProgress,
+    [progressStart, progressEnd],
+    [0.2, 1]
+  );
+
+  return (
+    <span key={spanKey} className="relative inline-block">
+      <span className="invisible">{char}</span>
+      <motion.span
+        className="absolute left-0 top-0"
+        style={{ opacity }}
+      >
+        {char}
+      </motion.span>
+    </span>
+  );
 }
 
 export function AnimatedText({ text, className = '' }: AnimatedTextProps) {
@@ -32,22 +61,15 @@ export function AnimatedText({ text, className = '' }: AnimatedTextProps) {
               const progressStart = totalCharsBefore / totalChars;
               const progressEnd = progressStart + 1 / totalChars;
 
-              const opacity = useTransform(
-                scrollYProgress,
-                [progressStart, progressEnd],
-                [0.2, 1]
-              );
-
               return (
-                <span key={`char-${wordIndex}-${charIndex}`} className="relative inline-block">
-                  <span className="invisible">{char}</span>
-                  <motion.span
-                    className="absolute left-0 top-0"
-                    style={{ opacity }}
-                  >
-                    {char}
-                  </motion.span>
-                </span>
+                <AnimatedCharacter
+                  key={`char-${wordIndex}-${charIndex}`}
+                  char={char}
+                  progressEnd={progressEnd}
+                  progressStart={progressStart}
+                  scrollYProgress={scrollYProgress}
+                  spanKey={`char-${wordIndex}-${charIndex}`}
+                />
               );
             })}
           </span>

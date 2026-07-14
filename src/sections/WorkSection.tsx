@@ -5,11 +5,11 @@ import { FadeIn } from '../components/FadeIn';
 import { Modal } from '../components/Modal';
 import { ImageGallery } from '../components/ImageGallery';
 
-export const works = [
+const works = [
   {
     num: "01",
     label: "Residential Construction",
-    name: "Client",
+    name: "Portfolio Sample",
     images: {
       left1: "/Work images/Work 1/2.jpeg",
       left2: "/Work images/Work 1/3.jpeg",
@@ -29,7 +29,7 @@ export const works = [
   {
     num: "02",
     label: "Commercial Construction",
-    name: "Client",
+    name: "Portfolio Sample",
     images: {
       left1: "/Work images/Work 2/2.jpeg",
       left2: "/Work images/Work 2/3.jpeg",
@@ -49,7 +49,7 @@ export const works = [
   {
     num: "03",
     label: "Industrial Construction",
-    name: "Client",
+    name: "Portfolio Sample",
     images: {
       left1: "/Work images/Work 3/2.jpeg",
       left2: "/Work images/Work 3/3.jpeg",
@@ -69,7 +69,7 @@ export const works = [
   {
     num: "04",
     label: "Site Development & Civil Works",
-    name: "Client",
+    name: "Portfolio Sample",
     images: {
       left1: "/Work images/Work 4/2.jpeg",
       left2: "/Work images/Work 4/3.jpeg",
@@ -89,7 +89,7 @@ export const works = [
   {
     num: "05",
     label: "Project Management & Estimation",
-    name: "Client",
+    name: "Portfolio Sample",
     images: {
       left1: "/Work images/Work 5/2.jpeg",
       left2: "/Work images/Work 5/3.jpeg",
@@ -115,7 +115,7 @@ export function WorkSection() {
     <section id="work" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-20 relative pb-32">
       <div className="px-5 sm:px-8 md:px-10 pt-20 sm:pt-24 md:pt-32 mb-16 sm:mb-20">
         <FadeIn delay={0}>
-          <h2 className="hero-heading font-black uppercase text-center text-[clamp(2.5rem,10vw,140px)] leading-none tracking-tight">
+          <h2 className="hero-heading font-black uppercase text-center text-[clamp(2.5rem,10vw,140px)] leading-none tracking-normal">
             Work
           </h2>
         </FadeIn>
@@ -136,7 +136,7 @@ export function WorkSection() {
       <Modal 
         isOpen={!!selectedWork} 
         onClose={() => setSelectedWork(null)}
-        title={selectedWork ? `${selectedWork.num} — ${selectedWork.label}` : ""}
+        title={selectedWork ? `${selectedWork.num} - ${selectedWork.label}` : ""}
       >
         {selectedWork && (
           <div className="flex flex-col gap-8">

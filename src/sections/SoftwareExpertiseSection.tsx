@@ -145,7 +145,7 @@ export function SoftwareExpertiseSection() {
   return (
     <section id="software" className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 relative z-10">
       <FadeIn delay={0}>
-        <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(2.5rem,9vw,120px)] leading-none tracking-tight mb-16 sm:mb-20 md:mb-28">
+        <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(2.5rem,9vw,120px)] leading-none tracking-normal mb-16 sm:mb-20 md:mb-28">
           Software Expertise
         </h2>
       </FadeIn>
@@ -175,7 +175,7 @@ export function SoftwareExpertiseSection() {
       <Modal 
         isOpen={!!selectedSoftware} 
         onClose={() => setSelectedSoftware(null)}
-        title={selectedSoftware ? `${selectedSoftware.name} — Work by Vivek` : ""}
+        title={selectedSoftware ? `${selectedSoftware.name} - Work by Vivek` : ""}
       >
         {selectedImages && (
           <div className="flex flex-col md:flex-row w-full gap-4 min-h-[300px]">

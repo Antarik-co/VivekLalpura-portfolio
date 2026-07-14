@@ -6,7 +6,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 flex flex-col items-center z-30 relative">
       <FadeIn delay={0}>
-        <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(2.5rem,10vw,140px)] leading-none tracking-tight mb-12 sm:mb-16 md:mb-20">
+        <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(2.5rem,10vw,140px)] leading-none tracking-normal mb-12 sm:mb-16 md:mb-20">
           Let&apos;s Connect
         </h2>
       </FadeIn>
@@ -51,7 +51,7 @@ export function ContactSection() {
 
       <FadeIn delay={0.75} y={10} className="w-full text-center">
         <p className="text-[#0C0C0C] opacity-50 text-xs font-medium uppercase tracking-wider">
-          © 2026 Vivek Lalpura — Open to Australian Sponsorship / Skilled Migration.
+          &copy; 2026 Vivek Lalpura - Open to Australian Sponsorship / Skilled Migration.
         </p>
       </FadeIn>
     </section>
