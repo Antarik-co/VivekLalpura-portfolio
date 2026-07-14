@@ -65,6 +65,25 @@ npm run build
 
 The build output is generated in `dist/` and is ready for Vercel deployment.
 
+## Vercel And Search Console
+
+For Vercel, use the default Vite settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | Vite |
+| Install command | `npm install` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+
+Google Search Console verification is wired through the HTML meta tag:
+
+```txt
+VITE_GOOGLE_SITE_VERIFICATION=your-google-verification-token
+```
+
+Add that value in Vercel under **Project Settings > Environment Variables**, then redeploy and verify the property in Google Search Console.
+
 ## Contact
 
 | Channel | Link |

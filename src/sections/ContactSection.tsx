@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Download, Phone } from 'lucide-react';
+import { Download, ExternalLink, Mail, Phone } from 'lucide-react';
 import { ContactTile } from '../components/Buttons';
 import { FadeIn } from '../components/FadeIn';
 
@@ -23,7 +23,7 @@ export function ContactSection() {
           
           <FadeIn delay={0.3} y={20}>
             <ContactTile 
-              icon={Linkedin} 
+              icon={ExternalLink} 
               text="linkedin.com/in/viveklalpura" 
               href="https://linkedin.com/in/viveklalpura" 
               target="_blank"
