@@ -66,6 +66,7 @@ export function MarqueeSection() {
             src={src}
             alt="Construction estimation portfolio preview"
             loading="lazy"
+            decoding="async"
             className="w-[420px] h-[270px] rounded-2xl object-cover flex-shrink-0"
           />
         ))}
@@ -82,6 +83,7 @@ export function MarqueeSection() {
             src={src}
             alt="Construction drawing and estimating work preview"
             loading="lazy"
+            decoding="async"
             className="w-[420px] h-[270px] rounded-2xl object-cover flex-shrink-0"
           />
         ))}

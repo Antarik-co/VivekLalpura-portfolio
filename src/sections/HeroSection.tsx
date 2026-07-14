@@ -41,6 +41,8 @@ export function HeroSection() {
         <video 
           ref={videoRef}
           src="/hero.webm" 
+          poster="/hero-poster.jpg"
+          preload="metadata"
           autoPlay 
           muted 
           loop 

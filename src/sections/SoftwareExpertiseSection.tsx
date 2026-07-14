@@ -159,7 +159,7 @@ export function SoftwareExpertiseSection() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-[#0C0C0C] text-xs opacity-40 tracking-widest font-bold">{item.num}</span>
-                <img src={item.icon} alt={item.name} className="h-9 sm:h-10 object-contain" />
+                <img src={item.icon} alt={item.name} loading="lazy" decoding="async" className="h-9 sm:h-10 object-contain" />
               </div>
               <h3 className="text-[#0C0C0C] font-medium uppercase text-lg sm:text-xl mb-2">
                 {item.name}
@@ -184,12 +184,16 @@ export function SoftwareExpertiseSection() {
               <img 
                 src={selectedImages.left1} 
                 alt={`${selectedSoftware.name} detail 1`} 
+                loading="lazy"
+                decoding="async"
                 className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px]"
                 style={{ height: "clamp(130px, 16vw, 230px)" }}
               />
               <img 
                 src={selectedImages.left2} 
                 alt={`${selectedSoftware.name} detail 2`} 
+                loading="lazy"
+                decoding="async"
                 className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex-grow"
                 style={{ height: "clamp(160px, 22vw, 340px)" }}
               />
@@ -200,6 +204,8 @@ export function SoftwareExpertiseSection() {
               <img 
                 src={selectedImages.right} 
                 alt={`${selectedSoftware.name} main`} 
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px]"
                 style={{ minHeight: "300px" }}
               />

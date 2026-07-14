@@ -191,12 +191,16 @@ function WorkCard({ work, index, totalCards, onView }: { work: any; index: numbe
             <img 
               src={work.images.left1} 
               alt={`${work.label} detail 1`} 
+              loading="lazy"
+              decoding="async"
               className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px]"
               style={{ height: "clamp(130px, 16vw, 230px)" }}
             />
             <img 
               src={work.images.left2} 
               alt={`${work.label} detail 2`} 
+              loading="lazy"
+              decoding="async"
               className="w-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex-grow"
               style={{ height: "clamp(160px, 22vw, 340px)" }}
             />
@@ -207,6 +211,8 @@ function WorkCard({ work, index, totalCards, onView }: { work: any; index: numbe
             <img 
               src={work.images.right} 
               alt={`${work.label} main`} 
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px]"
             />
           </div>

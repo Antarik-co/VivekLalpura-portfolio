@@ -19,6 +19,9 @@ export function ImageGallery({ images }: ImageGalleryProps) {
           <motion.img
             key={currentIndex}
             src={images[currentIndex]}
+            alt="Selected construction estimation work"
+            loading="lazy"
+            decoding="async"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -48,7 +51,13 @@ export function ImageGallery({ images }: ImageGalleryProps) {
             onClick={() => setCurrentIndex(i)}
             className={`relative rounded-xl overflow-hidden h-16 w-24 sm:h-20 sm:w-32 flex-shrink-0 cursor-pointer transition-opacity ${i === currentIndex ? 'ring-2 ring-[#D7E2EA]' : 'opacity-50 hover:opacity-100'}`}
           >
-            <img src={src} className="w-full h-full object-cover" />
+            <img
+              src={src}
+              alt="Construction estimation gallery thumbnail"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
           </button>
         ))}
       </div>
