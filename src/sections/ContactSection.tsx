@@ -18,6 +18,7 @@ export function ContactSection() {
               icon={Mail} 
               text="lalpuravivek@gmail.com" 
               href="mailto:lalpuravivek@gmail.com" 
+              ariaLabel="Email Vivek Lalpura"
             />
           </FadeIn>
           
@@ -27,6 +28,7 @@ export function ContactSection() {
               text="linkedin.com/in/viveklalpura" 
               href="https://linkedin.com/in/viveklalpura" 
               target="_blank"
+              ariaLabel="Open Vivek Lalpura LinkedIn profile"
             />
           </FadeIn>
 
@@ -35,6 +37,7 @@ export function ContactSection() {
               icon={Phone} 
               text="+91 7405115231" 
               href="tel:+917405115231" 
+              ariaLabel="Call Vivek Lalpura"
             />
           </FadeIn>
         </div>
@@ -45,6 +48,7 @@ export function ContactSection() {
             text="Download Resume" 
             href="/Resume.pdf" 
             download
+            ariaLabel="Download Vivek Lalpura resume"
           />
         </FadeIn>
       </div>

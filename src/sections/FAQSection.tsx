@@ -36,17 +36,22 @@ export function FAQSection() {
           </h2>
         </FadeIn>
 
-        <div className="mt-12 sm:mt-16 divide-y divide-[#D7E2EA]/20 border-y border-[#D7E2EA]/20">
+        <div className="mt-12 sm:mt-16 space-y-3">
           {faqs.map((item, index) => (
             <FadeIn key={item.question} delay={index * 0.08} y={20}>
-              <article className="grid gap-4 py-7 md:grid-cols-[0.8fr_1.2fr] md:gap-10 md:py-9">
-                <h3 className="text-xl font-semibold leading-snug text-[#D7E2EA] sm:text-2xl">
-                  {item.question}
-                </h3>
-                <p className="text-base font-light leading-relaxed text-[#D7E2EA]/75 sm:text-lg">
+              <details className="group rounded-2xl border border-[#D7E2EA]/20 bg-white/[0.03] px-5 py-5 transition-colors open:bg-white/[0.06] sm:px-7">
+                <summary className="flex cursor-pointer list-none items-center gap-4 text-[#D7E2EA] marker:hidden">
+                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-md border border-[#D7E2EA]/45 transition-colors group-open:border-[#D7E2EA] group-open:bg-[#D7E2EA]">
+                    <span className="h-2.5 w-2.5 scale-0 rounded-sm bg-[#0C0C0C] transition-transform group-open:scale-100" />
+                  </span>
+                  <span className="text-lg font-semibold leading-snug sm:text-2xl">
+                    {item.question}
+                  </span>
+                </summary>
+                <p className="pl-10 pt-4 text-base font-light leading-relaxed text-[#D7E2EA]/75 sm:text-lg">
                   {item.answer}
                 </p>
-              </article>
+              </details>
             </FadeIn>
           ))}
         </div>

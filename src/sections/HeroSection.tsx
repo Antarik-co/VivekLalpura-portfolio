@@ -67,14 +67,7 @@ export function HeroSection() {
 
       {/* Header */}
       <FadeIn delay={0} y={-20} as="header" className="w-full z-20 px-5 sm:px-8 md:px-10 pt-5 sm:pt-7">
-        <nav aria-label="Primary navigation" className="flex items-center justify-between gap-4 text-[#D7E2EA]">
-          <a href="#home" aria-label="Vivek Lalpura home" className="flex min-w-0 items-center gap-3 hover:opacity-75 transition-opacity duration-200">
-            <img src="/Monogram.svg" alt="" className="h-9 w-9 shrink-0" />
-            <span className="hidden sm:block text-sm md:text-base font-semibold uppercase tracking-[0.18em]">
-              Vivek Lalpura
-            </span>
-          </a>
-
+        <nav aria-label="Primary navigation" className="flex items-center justify-end gap-4 text-[#D7E2EA]">
           <div className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-[0.72rem] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.18em]">
             <a href="#about" className="hover:opacity-70 transition-opacity duration-200">About</a>
             <a href="#software" className="hover:opacity-70 transition-opacity duration-200">Software</a>

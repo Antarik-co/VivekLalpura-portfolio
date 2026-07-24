@@ -40,14 +40,16 @@ interface ContactTileProps {
   icon: LucideIcon;
   text: string;
   href: string;
+  ariaLabel?: string;
   target?: string;
   download?: boolean | string;
 }
 
-export function ContactTile({ icon: Icon, text, href, target, download }: ContactTileProps) {
+export function ContactTile({ icon: Icon, text, href, ariaLabel, target, download }: ContactTileProps) {
   return (
     <a
       href={href}
+      aria-label={ariaLabel}
       target={target}
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
       download={download}

@@ -5,6 +5,7 @@ import { SoftwareExpertiseSection } from './sections/SoftwareExpertiseSection';
 import { WorkSection } from './sections/WorkSection';
 import { FAQSection } from './sections/FAQSection';
 import { ContactSection } from './sections/ContactSection';
+import { BackToTopButton } from './components/BackToTopButton';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <WorkSection />
       <FAQSection />
       <ContactSection />
+      <BackToTopButton />
     </main>
   );
 }
